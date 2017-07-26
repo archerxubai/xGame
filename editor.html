@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>editor</title>
+    <style>
+        canvas{
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="id-canvas" width="800" height="600"></canvas>
+
+
+<script>
+    var log = console.log.bind(console)
+
+    var canvas = document.querySelector('#id-canvas')
+    var ctx = canvas.getContext('2d');
+
+    class editMode{
+        static newBlcok(x, y){
+            ctx.fillRect(x, y, 50, 10)
+        }
+
+        static config(){
+            let c = load()
+            return c
+        }
+
+        static saveConfig(data) {
+            save(data)
+        }
+
+        static on() {
+            log('enter edit mode')
+            let cls = this
+            window.addEventListener('click', function (event) {
+                let x = event.clientX
+                let y = event.clientY
+                log(x, y)
+                cls.newBlcok(x, y)
+            })
+            let data = cls.config()
+        }
+
+        static newLevel(name, data) {
+            let cls = this
+            let levelData = data
+            let oldConfig = cls.config()
+            let newConfig = oldConfig.concat(oldConfig)
+            cls.saveConfig(newConfig)
+        }
+    }
+    
+    window.addEventListener('keydown', function (event) {
+        if (event.key == 'e') {
+            editMode.on()
+        }
+    })
+
+
+</script>
+</body>
+</html>
