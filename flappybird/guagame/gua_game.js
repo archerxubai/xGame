@@ -13,10 +13,10 @@ class GuaGame {
         // events
         var self = this
         window.addEventListener('keydown', event => {
-            self.keydowns[event.key] = 'down'
+            this.keydowns[event.key] = true
         })
-        window.addEventListener('keyup', event =>{
-            self.keydowns[event.key] = 'up'
+        window.addEventListener('keyup', function(event){
+            self.keydowns[event.key] = false
         })
         this.init()
     }
@@ -47,14 +47,10 @@ class GuaGame {
         var g = this
         var actions = Object.keys(g.actions)
         for (var i = 0; i < actions.length; i++) {
-            let key = actions[i]
-            var status = g.keydowns[key]
-            if (status == 'down'){
-                g.actions[key]('down')
-            }else if (status == 'up'){
-                g.actions[key]('up')
-                //删除掉这个key的状态
-                delete g.keydowns[key]
+            var key = actions[i]
+            if(g.keydowns[key]) {
+                // 如果按键被按下, 调用注册的 action
+                g.actions[key]()
             }
         }
         // update

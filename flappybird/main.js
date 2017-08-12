@@ -35,19 +35,14 @@ var enableDebugMode = function(game, enable) {
 
 var __main = function() {
     var images = {
-        sky: 'img/background.png',
+        bg: 'img/bg_day.png',
         // cloud: 'img/block',
-        bullet: 'img/bullet1.png',
-        particle: 'img/particle.png',
-        player: 'img/hero1.png',
-        enemy0: 'img/enemy0.png',
-        enemy1: 'img/enemy1.png',
-        enemy2: 'img/enemy2.png',
-        //爆炸动画
-        enemy0_down1: 'img/enemy0_down1.png',
-        enemy0_down2: 'img/enemy0_down2.png',
-        enemy0_down3: 'img/enemy0_down3.png',
-        enemy0_down4: 'img/enemy0_down4.png',
+        ground: 'img/land.png',
+        b1: 'img/bird0_0.png',
+        b2: 'img/bird0_1.png',
+        b3: 'img/bird0_2.png',
+        pipe_down:  'img/pipe_down.png',
+        pipe_up:  'img/pipe_up.png',
     }
     var game = GuaGame.instance(30, images, function(g){
         var s = SceneTitle.new(g)
