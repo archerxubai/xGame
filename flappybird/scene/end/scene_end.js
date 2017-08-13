@@ -8,6 +8,7 @@ class SceneEnd extends GuaScene {
     }
     draw() {
         // draw labels
+        log('scene_end draw')
         this.game.context.fillText('游戏结束, 按 r 返回标题界面', 100, 290)
     }
 }

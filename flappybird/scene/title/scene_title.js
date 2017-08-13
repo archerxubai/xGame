@@ -70,10 +70,60 @@ class Pipes{
     }
 
     debug(){
-        log('debug')
         this.xGap = config.xGap.value
         this.pipeSpace = config.pipe_space.value
     }
+}
+
+class Bird extends GuaAnimation{
+    constructor(game){
+        super(game)
+
+    }
+
+    static new(game){
+        return new this(game)
+    }
+
+    update(){
+        super.update()
+        var b = this
+        var objs = this.game.scene.elements
+        for (let i = 0; i < objs.length; i++){
+            let e = objs[i]
+            // log('this is ', instanceof(e))
+            if (e instanceof Pipes) {
+                for (let p of e.pipes) {
+                    log('it is pipe', p, p.x, p.y, p.w)
+                    log(this.collide(p))
+                    if (this.collide(p)) {
+                        log('collide')
+                        var s = SceneEnd.new(this.game)
+                        b.game.replaceScene(s)
+                    }
+                }
+
+            }
+        }
+    }
+
+    collide(target) {
+        var aInb = function (x, x1, x2) {
+            return x >= x1 && x <= x2
+        }
+        var a = this
+        var b = target
+        log('a.x a.y',a.x, a.y)
+        log('b.x b.y b.w', b.x, b.y, b.w)
+        if (aInb(a.x, b.x, b.x + b.w) || aInb(b.x, a.x, a.x + a.w)) {
+            if (aInb(a.y, b.y, b.y + b.h) || aInb(b.y, a.y, a.y + a.h)) {
+                return true
+            }
+        }
+        return false
+    }
+
+
 }
 
 class SceneTitle extends GuaScene {
@@ -86,7 +136,7 @@ class SceneTitle extends GuaScene {
         var bg = GuaImage.new(game, 'bg')
         this.addElement(bg)
 
-        var bird = GuaAnimation.new(game)
+        var bird = Bird.new(game)
         this.bird = bird
         bird.x = 100
         bird.y = 200
