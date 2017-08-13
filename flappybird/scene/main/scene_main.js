@@ -1,12 +1,6 @@
 /**
  * Created by hasee on 2017/8/9.
  */
-var config = {
-    player_speed: 10,
-    enemy_speed: 4,
-    bullet_speed: 4,
-    coolDown: 2,
-}
 
 const randonBetween = function(start, end) {
     var n = Math.random() * (end - start +1)

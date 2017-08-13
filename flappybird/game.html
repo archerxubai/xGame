@@ -27,41 +27,22 @@
         <script src='scene/title/scene_title.js'></script>
         <!-- 关卡数据 -->
         <script src='level.js'></script>
+        <!--配置数据-->
+        <script src="config.js"></script>
     </head>
     <body>
         <canvas id="id-canvas" width="300" height="580"></canvas>
         <hr>
         <input id=id-input-speed type="range" value="1">
-        <div class="">
+        <div class="gua-controls">
             <!-- <textarea id="id-text-log" rows="20" cols="50"></textarea> -->
-        </div>
-        <div>
-            <label>
-                <input class="gua-auto-slider" type="range" value="10"
-                       data-value="config.player_speed">
-                玩家速度: <span class="gua-label"></span>
-            </label>
-        </div>
-        <div>
-            <label>
-                <input class="gua-auto-slider" type="range" value="10"
-                       data-value="config.enemy_speed">
-                敌人速度: <span class="gua-label"></span>
-            </label>
-        </div>
-        <div>
-            <label>
-                <input class="gua-auto-slider" type="range" value="10"
-                       data-value="config.bullet_speed">
-                子弹速度: <span class="gua-label"></span>
-            </label>
-        </div>
-        <div>
-            <label>
-                <input class="gua-auto-slider" type="range" value="10"
-                       data-value="config.coolDown">
-                子弹冷却时间: <span class="gua-label"></span>
-            </label>
+            <!--<div>-->
+                <!--<label>-->
+                    <!--<input class="gua-auto-slider" type="range" value="10"-->
+                           <!--data-value="config.player_speed">-->
+                    <!--玩家速度: <span class="gua-label"></span>-->
+                <!--</label>-->
+            <!--</div>-->
         </div>
         <script src=main.js></script>
         <script>
@@ -77,14 +58,50 @@
                 }
             }
 
-            bindAll('.gua-auto-slider', 'input', function (event) {
-                var target = event.target
-                var bindVar = target.dataset.value
-                var v = target.value
-                eval(bindVar + '=' + v)
-                var label = target.closest('label').querySelector('.gua-label')
-                label.innerText = v
-            })
+            var templateControl = function (key, item) {
+                var t = `
+                    <div >
+                        <label>
+                            <input class="gua-auto-slider" type="range" value="${item.value}"
+                            max="300"
+                              data-value="config.${key}">
+                            ${item._comment}: <span class="gua-label"></span>
+                        </label>
+                    </div>
+                   `
+                return t
+            }
+
+            var bindEvents = function () {
+                bindAll('.gua-auto-slider', 'input', function (event) {
+                    var target = event.target
+                    var bindVar = target.dataset.value
+                    var v = target.value
+                    eval(bindVar + '.value =' + v)
+                    var label = target.closest('label').querySelector('.gua-label')
+                    label.innerText = v
+                })
+            }
+
+            var insertControls = function () {
+                var div = e('.gua-controls')
+                var keys = Object.keys(config)
+                for (var k of keys){
+                    var item = config[k]
+                    var html = templateControl(k, item)
+                    div.insertAdjacentHTML('beforeend', html)
+                }
+                log('insert Controls')
+            }
+
+            var _main = function () {
+                //从配置文件里生成hmtl控件
+                insertControls()
+                bindEvents()
+                //绑定事件
+            }
+
+            _main()
         </script>
     </body>
 </html>

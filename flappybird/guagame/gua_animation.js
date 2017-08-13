@@ -16,11 +16,9 @@ class GuaAnimation {
         }
 
         this.animationName = 'idle'
-        log('animations', this.animations)
         this.texture = this.frames()[0]
         this.w = this.texture.width
         this.h = this.texture.height
-        log('w h', this.w, this.h)
         this.frameIndex = 0
         this.frameCount = 3
 

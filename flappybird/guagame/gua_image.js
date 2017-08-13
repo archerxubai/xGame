@@ -3,14 +3,15 @@
  */
 class GuaImage {
     constructor(game, name) {
-        log('GuaImage:', name)
         this.game = game
         this.texture = game.textureByName(name)
-        log('this.texture', this.texture)
         this.x = 0
         this.y = 0
         this.w = this.texture.width
         this.h = this.texture.height
+
+        this.flipY = false
+        this.rotation = 0
     }
     static new(game, name) {
         var i = new this(game, name)

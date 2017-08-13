@@ -1,6 +1,4 @@
-var aInb = function(x, x1, x2) {
-    return x >= x1 && x <= x2
-}
+
 
 class Bullet extends GuaImage{
     constructor(game) {
@@ -33,6 +31,9 @@ class Bullet extends GuaImage{
     }
 
     collide(target){
+        var aInb = function (x, x1, x2) {
+            return x >= x1 && x <= x2
+        }
         var a = this
         var b = target
         if (aInb(a.x, b.x, b.x + b.w) || aInb(b.x, a.x, a.x + a.w)) {
