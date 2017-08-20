@@ -5,7 +5,7 @@ class SceneEdit extends GuaScene {
         this.levelNum = levels.length
         log('level num', this.levelNum)
         s.blocks = s.load(1)
-        this.level = 1
+        this.level = config.currentLevel
 
         //监听事件
         for (let i = 0; i < this.levelNum; i++){
@@ -60,12 +60,23 @@ class SceneEdit extends GuaScene {
         return blocks
     }
 
+    update(){
+        var s = this
+        s.level = config.currentLevel
+        log('now level', s.level)
+        // var s = this
+        // s.blocks = s.load(config.currentLevels)
+    }
+
     draw() {
         // draw labels
         var s = this
         s.game.context.fillText('按i进行保存, 按数字键选关', 250, 280)
         var text = '第' + this.level + '关'
         s.game.context.fillText(text, 40, 280)
+        s.blocks = s.load(s.level)
+        // s.blocks = s.load(config.currentLevel)
+        // log('s.blocks', s.blocks)
         for (var i = 0; i < s.blocks.length; i++) {
             var block = this.blocks[i]
             if (block.alive) {
