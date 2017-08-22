@@ -1,5 +1,13 @@
+
+
 var loadLevel = function(game, n) {
-    n = n - 1
+    log('level', n)
+    if (n > levels.length){
+        n = levels.length - 1
+    }else {
+        n = n - 1
+    }
+    log('fix level', n)
     var level = levels[n]
     var blocks = []
     for (var i = 0; i < level.length; i++) {
