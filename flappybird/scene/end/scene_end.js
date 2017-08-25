@@ -5,10 +5,10 @@ class SceneEnd extends GuaScene {
             var s = SceneTitle.new(game)
             game.replaceScene(s)
         })
+        this.score = 0
     }
     draw() {
         // draw labels
-        log('scene_end draw')
-        this.game.context.fillText('游戏结束, 按 r 返回标题界面', 100, 290)
+        this.game.context.fillText('得到'+ this.score + '分' + '游戏结束, 按 r 返回标题界面', 70, 290)
     }
 }

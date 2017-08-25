@@ -20,16 +20,20 @@
         <script src='scene/main/scene.js'></script>
         <!-- 结束和标题场景 -->
         <script src='scene/end/scene_end.js'></script>
-        <script src='scene/title/scene_title.js'></script>
         <script src='scene/edit/scene_edit.js'></script>
+        <script src='scene/title/scene_title.js'></script>
         <!-- 关卡数据 -->
         <script src='level.js'></script>
     </head>
     <body>
         <canvas id="id-canvas" width="400" height="300"></canvas>
         <hr>
+        <span>游戏速度</span>
         <input id=id-input-speed type="range" value="1">
-        <input id='id-input-level' type="range" value="1" max="10">
+        <br>
+        <span>关卡选择</span>
+        <input id='id-input-level' type="range" value="1" max="10" min="1">
+        <span id="id-span-level"></span>
         <div class="">
             <!-- <textarea id="id-text-log" rows="20" cols="50"></textarea> -->
         </div>
@@ -39,13 +43,19 @@
             currentLevel: 1,
         }
 
+        const bindInput = function () {
             var input = document.querySelector('#id-input-level')
+
             input.addEventListener('input', function (event) {
                 log('scroll')
                 var target = event.target
+                var spanLevel = document.querySelector('#id-span-level')
+                spanLevel.textContent = target.value
                 config.currentLevel = target.value
                 log('config level', config.currentLevel)
             })
+        }
+        bindInput()
         </script>
     </body>
 </html>

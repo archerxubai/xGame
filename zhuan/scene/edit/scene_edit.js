@@ -2,10 +2,11 @@ class SceneEdit extends GuaScene {
     constructor(game) {
         super(game)
         var s = this
-        this.levelNum = levels.length
+        // this.levelNum = levels.length
         log('level num', this.levelNum)
         s.blocks = s.load(1)
         this.level = config.currentLevel
+        this.saveCooldown = 5
 
         //监听事件
         for (let i = 0; i < this.levelNum; i++){
@@ -24,13 +25,30 @@ class SceneEdit extends GuaScene {
 
         game.registerAction('i', function(){
             let config = s.blocks
-            s.saveLevel(config)
+            if (s.saveCooldown == 0){
+                s.saveCooldown = 5
+                s.saveLevel(config)
+            }
+        })
+
+        game.registerAction('r', function(){
+            let s = SceneTitle.new(game)
+            game.replaceScene(s)
+        })
+
+        game.registerAction('c', function () {
+            let levelChoosed = config.currentLevel
+            if(levelChoosed > levels.length){
+                levelChoosed = levels.length
+            }
+            s.level = levelChoosed
+            s.blocks = s.load(levelChoosed)
         })
 
     }
 
     saveLevel(config){
-        log('save level config')
+        log('save level')
         var blockPos = []
         for (let i = 0; i < config.length; i++){
             let e = config[i]
@@ -40,8 +58,6 @@ class SceneEdit extends GuaScene {
         }
         levels.push(blockPos)
         log('levels:', levels)
-        var s = new SceneEdit(this.game)
-        this.game.replaceScene(s)
     }
 
     newBlock(x, y){
@@ -50,6 +66,15 @@ class SceneEdit extends GuaScene {
         let width = 40
         let location = [Math.round(x/width) * width, Math.round(y/height) * height]
         let block = new Block(s.game, location)
+        for (let i = 0; i < s.blocks.length; i++){
+            let b = s.blocks[i]
+            if (block.x == b.x && block.y == b.y){
+                let index = s.blocks.indexOf(b)
+                log('delete blocks')
+                s.blocks.splice(index, 1)
+                return
+            }
+        }
         s.blocks.push(block)
     }
 
@@ -62,8 +87,10 @@ class SceneEdit extends GuaScene {
 
     update(){
         var s = this
-        s.level = config.currentLevel
-        log('now level', s.level)
+        if(s.saveCooldown > 0){
+            s.saveCooldown--
+        }
+        // s.level = config.currentLevel
         // var s = this
         // s.blocks = s.load(config.currentLevels)
     }
@@ -71,14 +98,13 @@ class SceneEdit extends GuaScene {
     draw() {
         // draw labels
         var s = this
-        s.game.context.fillText('按i进行保存, 按数字键选关', 250, 280)
-        var text = '第' + this.level + '关'
+        s.game.context.fillText('按i进行保存, 按数字键选关，按r返回， 按c选关', 150, 280)
+        var text = '第' + s.level + '关'
         s.game.context.fillText(text, 40, 280)
-        s.blocks = s.load(s.level)
         // s.blocks = s.load(config.currentLevel)
         // log('s.blocks', s.blocks)
         for (var i = 0; i < s.blocks.length; i++) {
-            var block = this.blocks[i]
+            var block = s.blocks[i]
             if (block.alive) {
                 this.game.drawImage(block)
             }
