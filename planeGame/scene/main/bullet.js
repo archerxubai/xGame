@@ -73,9 +73,14 @@ class EnemyBullet extends Bullet{
         this.speed = config.enemy_bullet_speed.value
     }
 
+    collideWithPlayer(){
+        this.collideWith(Player)
+    }
+
     update(){
         let self = this
         self.y += self.speed
+        this.collideWithPlayer()
     }
 
 }

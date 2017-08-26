@@ -35,7 +35,7 @@ var enableDebugMode = function(game, enable) {
 
 var __main = function() {
     var images = {
-        sky: 'img/background.png',
+        sky: 'img/bg.jpg',
         // cloud: 'img/block',
         bullet: 'img/bullet1.png',
         particle: 'img/particle.png',

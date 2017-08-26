@@ -51,6 +51,13 @@
 
      }
 
+     destroy(){
+         let self = this
+         let ps = GuaParticleSystem.new(self.game, self.x, self.y)
+         self.game.scene.addElement(ps)
+         self.game.scene.removeElement(self)
+     }
+
      collideWithEnemy() {
         log('collide')
         var objs = this.game.scene.elements
@@ -59,8 +66,9 @@
             // log('this is ', instanceof(e))
             if (e instanceof Enemy) {
                 if (this.collide(e)) {
-                    let s = SceneEnd.new(this.game)
-                    this.game.replaceScene(s)
+                    this.destroy()
+                    // let s = SceneEnd.new(this.game)
+                    // this.game.replaceScene(s)
                 }
             }
         }
