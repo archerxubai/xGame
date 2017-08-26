@@ -1,6 +1,6 @@
 class Bullet extends GuaImage{
     constructor(game, picName) {
-        log('build bullet')
+        // log('build bullet')
         super(game, picName)
         this.setup()
     }
@@ -15,25 +15,28 @@ class Bullet extends GuaImage{
     }
 
     collideWith(type) {
-        log('collide')
+        // log('collide')
         var objs = this.game.scene.elements
         for (let i = 0; i < objs.length; i++) {
             let e = objs[i]
             // log('this is ', instanceof(e))
             if (e instanceof type) {
                 if (this.collide(e)) {
-                    log('been shooted')
+                    // log('been shooted')
                     e.destroy()
                     this.destroy()
+                    return true
                 }
             }
         }
+        return false
     }
 
 
     update(){
         var self = this
         self.y -= self.speed
+
     }
 
 
@@ -52,12 +55,18 @@ class PlayerBullet extends Bullet{
     update(){
         let self = this
         super.update()
-        self.collideWith(Enemy)
+        //子弹出屏删除，能降低卡顿
+        if(self.y < 0){
+            self.destroy()
+        }
+        if (self.collideWith(Enemy)){
+            self.game.scene.score ++
+        }
         self.bulletColide()
     }
 
     bulletColide(){
-        this.collideWith(EnemyBullet)
+        return this.collideWith(EnemyBullet)
     }
 }
 
@@ -72,12 +81,15 @@ class EnemyBullet extends Bullet{
     }
 
     collideWithPlayer(){
-        this.collideWith(Player)
+        return this.collideWith(Player)
     }
 
     update(){
         let self = this
         self.y += self.speed
+        if(self.y > 550){
+            self.destroy()
+        }
         this.collideWithPlayer()
     }
 

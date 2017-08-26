@@ -8,7 +8,8 @@ class Enemy extends GuaImage {
     }
 
     setup(){
-        this.speed = randonBetween(2, 5)
+        this.speedY = randonBetween(2, 5)
+        this.speedX = randonBetween(-1, 1)
         this.x = randonBetween(0, 350)
         this.y = -randonBetween(0, 400)
         this.coolDown = randonBetween(40, 100)
@@ -42,10 +43,12 @@ class Enemy extends GuaImage {
      }
 
     update() {
-        this.speed = config.enemy_speed.value
+        this.speedY = config.enemy_speed.value * this.speedY
+        this.speedX = config.enemy_speed.value * this.speedX
         this.coolDown--
         this.fire()
-        this.y += this.speed
+        this.y += this.speedY
+        this.x += this.speedX
         if (this.y > 600) {
             this.setup()
         }

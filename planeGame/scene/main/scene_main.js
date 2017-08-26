@@ -25,6 +25,7 @@ class SceneMain extends GuaScene {
         var game = this.game
         this.numberOfEnemies = 5
         this.bg = GuaImage.new(game, 'sky')
+        this.score = 0
 
         this.player = Player.new(game)
         this.player.x = 150
@@ -70,13 +71,20 @@ class SceneMain extends GuaScene {
 
 
 
-    // draw() {
-    //     // draw labels
-    //     // this.game.drawImage(this.bg)
-    //     // this.game.drawImage(this.player)
-    // }
+    draw() {
+        super.draw()
+        let self = this
+        // log('draw score')
+        self.game.context.font = "20px serif"
+        self.game.context.fillStyle = 'white'
+        self.game.context.fillText('分数'+ self.score, 10, 450)
+    }
 
     update() {
+        if (window.paused) {
+            return
+        }
         super.update()
+
     }
 }

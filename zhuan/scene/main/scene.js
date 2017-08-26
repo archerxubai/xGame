@@ -189,7 +189,7 @@ class SceneMain extends GuaScene {
 
     update() {
         super.update()
-          if (window.paused) {
+        if (window.paused) {
             return
         }
         let game = this.game

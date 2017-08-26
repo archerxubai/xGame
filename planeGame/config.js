@@ -8,7 +8,7 @@ var config = {
     },
     enemy_speed:  {
         _comment:'敌人速度',
-        value: 4,
+        value: 1,
     },
     enemy_bullet_speed:  {
         _comment:'敌人子弹速度',

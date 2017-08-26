@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c8e5bae-4e9d-477f-ad21-643696498c7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/planeGame/img/yuzhou.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/planeGame/img/end.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/planeGame/img/title_bg.jpeg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planeGame/config.js" afterPath="$PROJECT_DIR$/planeGame/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planeGame/game.html" afterPath="$PROJECT_DIR$/planeGame/game.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planeGame/guagame/gua_label.js" afterPath="$PROJECT_DIR$/planeGame/guagame/gua_label.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planeGame/main.js" afterPath="$PROJECT_DIR$/planeGame/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planeGame/scene/end/scene_end.js" afterPath="$PROJECT_DIR$/planeGame/scene/end/scene_end.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planeGame/scene/main/bullet.js" afterPath="$PROJECT_DIR$/planeGame/scene/main/bullet.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planeGame/scene/main/enemy.js" afterPath="$PROJECT_DIR$/planeGame/scene/main/enemy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planeGame/scene/main/player.js" afterPath="$PROJECT_DIR$/planeGame/scene/main/player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planeGame/scene/main/scene_main.js" afterPath="$PROJECT_DIR$/planeGame/scene/main/scene_main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planeGame/scene/title/scene_title.js" afterPath="$PROJECT_DIR$/planeGame/scene/title/scene_title.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhuan/scene/main/scene.js" afterPath="$PROJECT_DIR$/zhuan/scene/main/scene.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,22 +30,52 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="level.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/planeGame/level.js">
+        <leaf>
+          <file leaf-file-name="bullet.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/planeGame/scene/main/bullet.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <state relative-caret-position="373">
+                  <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="player.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="scene_title.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/planeGame/scene/title/scene_title.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="gua_label.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_label.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="player.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/planeGame/scene/main/player.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="705">
-                  <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+                <state relative-caret-position="-36">
+                  <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="scene_end.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/planeGame/scene/end/scene_end.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -47,28 +84,8 @@
           <file leaf-file-name="game.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/planeGame/game.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="scene_main.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/planeGame/scene/main/scene_main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="259">
-                  <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/planeGame/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="268">
-                  <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+                <state relative-caret-position="390">
+                  <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -77,39 +94,42 @@
           <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/planeGame/config.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
                   <folding>
-                    <marker date="1503732163000" expanded="true" signature="982:1343" ph="..." />
-                    <marker date="1503732163000" expanded="true" signature="1015:1316" ph="..." />
-                    <marker date="1503732163000" expanded="true" signature="1110:1205" ph="..." />
+                    <marker date="1503787592000" expanded="true" signature="982:1343" ph="..." />
+                    <marker date="1503787592000" expanded="true" signature="1015:1316" ph="..." />
+                    <marker date="1503787592000" expanded="true" signature="1110:1205" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="bullet2.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/planeGame/img/bullet2.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
+          <file leaf-file-name="gua_particle_system.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/flappybird/guagame/gua_particle_system.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="409">
+                  <caret line="75" column="11" lean-forward="true" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/planeGame/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="133">
+                  <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+                  <folding />
+                </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="enemy.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/planeGame/scene/main/enemy.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="237">
-                  <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="gua_game.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_game.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+                <state relative-caret-position="-212">
+                  <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
@@ -118,34 +138,41 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="bullet.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/planeGame/scene/main/bullet.js">
+        <leaf>
+          <file leaf-file-name="enemy.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/planeGame/scene/main/enemy.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+                <state relative-caret-position="88">
+                  <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="gua_image.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_image.js">
+          <file leaf-file-name="gua_scene.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_scene.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+                <state relative-caret-position="144">
+                  <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="gua_game.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_game.js">
+          <file leaf-file-name="scene_main.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/planeGame/scene/main/scene_main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-245">
-                  <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+                <state relative-caret-position="244">
+                  <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
                   <folding />
                 </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="player.png" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/planeGame/img/player.png">
+              <provider selected="true" editor-type-id="images">
+                <state />
               </provider>
             </entry>
           </file>
@@ -168,7 +195,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/planeGame/guagame/gua_scene.js" />
-        <option value="$PROJECT_DIR$/planeGame/guagame/gua_label.js" />
         <option value="$PROJECT_DIR$/planeGame/guagame/gua_animation.js" />
         <option value="$PROJECT_DIR$/flappybird/guagame/gua_particle_system.js" />
         <option value="$PROJECT_DIR$/flappybird/guagame/gua_label.js" />
@@ -179,7 +205,6 @@
         <option value="$PROJECT_DIR$/handScript/main.js" />
         <option value="$PROJECT_DIR$/mario/mario.html" />
         <option value="$PROJECT_DIR$/zhuan/scene/title/scene_title.js" />
-        <option value="$PROJECT_DIR$/zhuan/scene/main/scene.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js" />
         <option value="$PROJECT_DIR$/zhuan/guagame/gua_game.js" />
         <option value="$PROJECT_DIR$/zhuan/game.html" />
@@ -190,7 +215,6 @@
         <option value="$PROJECT_DIR$/flappybird/guagame/gua_game.js" />
         <option value="$PROJECT_DIR$/flappybird/scene/main/pipe.js" />
         <option value="$PROJECT_DIR$/flappybird/scene/end/scene_end.js" />
-        <option value="$PROJECT_DIR$/flappybird/scene/main/scene_main.js" />
         <option value="$PROJECT_DIR$/flappybird/scene/main/ground.js" />
         <option value="$PROJECT_DIR$/flappybird/scene/main/bird.js" />
         <option value="$PROJECT_DIR$/flappybird/scene/title/scene_title.js" />
@@ -198,14 +222,18 @@
         <option value="$PROJECT_DIR$/planeGame/guagame/gua_game.js" />
         <option value="$PROJECT_DIR$/planeGame/guagame/gua_particle_system.js" />
         <option value="$PROJECT_DIR$/planeGame/guagame/gua_image.js" />
-        <option value="$PROJECT_DIR$/planeGame/scene/main/scene_main.js" />
-        <option value="$PROJECT_DIR$/planeGame/scene/title/scene_title.js" />
-        <option value="$PROJECT_DIR$/planeGame/scene/main/player.js" />
-        <option value="$PROJECT_DIR$/planeGame/scene/main/bullet.js" />
+        <option value="$PROJECT_DIR$/zhuan/scene/main/scene.js" />
         <option value="$PROJECT_DIR$/planeGame/config.js" />
         <option value="$PROJECT_DIR$/planeGame/scene/main/enemy.js" />
-        <option value="$PROJECT_DIR$/planeGame/game.html" />
+        <option value="$PROJECT_DIR$/flappybird/scene/main/scene_main.js" />
+        <option value="$PROJECT_DIR$/planeGame/scene/main/scene_main.js" />
+        <option value="$PROJECT_DIR$/planeGame/scene/main/bullet.js" />
+        <option value="$PROJECT_DIR$/planeGame/scene/main/player.js" />
+        <option value="$PROJECT_DIR$/planeGame/scene/end/scene_end.js" />
         <option value="$PROJECT_DIR$/planeGame/main.js" />
+        <option value="$PROJECT_DIR$/planeGame/game.html" />
+        <option value="$PROJECT_DIR$/planeGame/guagame/gua_label.js" />
+        <option value="$PROJECT_DIR$/planeGame/scene/title/scene_title.js" />
       </list>
     </option>
   </component>
@@ -221,7 +249,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="88" />
     <option name="y" value="23" />
     <option name="width" value="1366" />
@@ -268,12 +296,56 @@
               <item name="xGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="xGame" type="462c0819:PsiDirectoryNode" />
               <item name="planeGame" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xGame" type="462c0819:PsiDirectoryNode" />
+              <item name="planeGame" type="462c0819:PsiDirectoryNode" />
               <item name="scene" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="xGame" type="462c0819:PsiDirectoryNode" />
               <item name="planeGame" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="end" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xGame" type="462c0819:PsiDirectoryNode" />
+              <item name="planeGame" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xGame" type="462c0819:PsiDirectoryNode" />
+              <item name="planeGame" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+              <item name="title" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xGame" type="462c0819:PsiDirectoryNode" />
+              <item name="zhuan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xGame" type="462c0819:PsiDirectoryNode" />
+              <item name="zhuan" type="462c0819:PsiDirectoryNode" />
+              <item name="guagame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xGame" type="462c0819:PsiDirectoryNode" />
+              <item name="zhuan" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xGame" type="462c0819:PsiDirectoryNode" />
+              <item name="zhuan" type="462c0819:PsiDirectoryNode" />
               <item name="scene" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -316,7 +388,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.ide-scripting.js">
+  <component name="RunManager" selected="Node.js.bullet.js">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -382,16 +454,19 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <configuration name="bullet.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="bullet.js" working-dir="$PROJECT_DIR$/planeGame/scene/main" />
     <configuration name="game.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/xGame/planeGame/game.html" />
     <configuration name="ide-scripting.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js" working-dir="$PROJECT_DIR$" />
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.game.html" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.ide-scripting.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.bullet.js" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.ide-scripting.js" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.game.html" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.bullet.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.ide-scripting.js" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.game.html" />
       </list>
     </recent_temporary>
   </component>
@@ -416,19 +491,20 @@
       <workItem from="1503434461173" duration="7000" />
       <workItem from="1503620949322" duration="18406000" />
       <workItem from="1503729699407" duration="1640000" />
-      <workItem from="1503731387452" duration="1441000" />
+      <workItem from="1503731387452" duration="6855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87715000" />
+    <option name="totallyTimeSpent" value="93129000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="88" y="23" width="1366" height="699" extended-state="0" />
+    <frame x="0" y="23" width="1366" height="699" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1830161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19632606" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -440,7 +516,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -453,39 +528,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/flappybird/scene/main/scene_main.js</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zhuan/scene/main/paddle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handScript/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mario/mario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="51" column="26" lean-forward="false" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhuan/guagame/gua_scene.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zhuan/scene/main/ball.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -501,13 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhuan/scene/main/block.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zhuan/scene/title/scene_title.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -517,36 +565,10 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js" />
     <entry file="file://$PROJECT_DIR$/zhuan/editor.html" />
-    <entry file="file://$PROJECT_DIR$/zhuan/scene/main/scene.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="101" column="20" lean-forward="true" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhuan/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-589">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/handScript/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2153">
           <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhuan/guagame/gua_game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -561,14 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhuan/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-356">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -659,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_label.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/planeGame/guagame/mouse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -707,42 +714,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_scene.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flappybird/scene/main/scene_main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="e#44#125#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#SceneMain#0" expanded="false" />
-            <element signature="n#!!block;n#setupInputs#0;n#SceneMain#0" expanded="false" />
-            <element signature="n#!!block;n#draw#0;n#SceneMain#0" expanded="false" />
-            <element signature="n#!!block;n#update#0;n#SceneMain#0" expanded="false" />
-            <element signature="n#!!block;n#countScore#0;n#SceneMain#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planeGame/scene/title/scene_title.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/planeGame/img/bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planeGame/img/player.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -760,38 +732,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/planeGame/config.js">
+    <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_image.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding>
-            <marker date="1503732163000" expanded="true" signature="982:1343" ph="..." />
-            <marker date="1503732163000" expanded="true" signature="1015:1316" ph="..." />
-            <marker date="1503732163000" expanded="true" signature="1110:1205" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planeGame/scene/main/enemy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planeGame/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/planeGame/scene/main/scene_main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        <state relative-caret-position="195">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -804,34 +748,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/planeGame/main.js">
+    <entry file="file://$PROJECT_DIR$/zhuan/guagame/gua_scene.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        <state relative-caret-position="90">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhuan/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhuan/guagame/gua_game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhuan/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhuan/scene/main/paddle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhuan/scene/main/block.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhuan/scene/main/scene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="193" column="9" lean-forward="true" selection-start-line="191" selection-start-column="8" selection-end-line="193" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flappybird/guagame/gua_particle_system.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="75" column="11" lean-forward="true" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <marker date="1503787592000" expanded="true" signature="982:1343" ph="..." />
+            <marker date="1503787592000" expanded="true" signature="1015:1316" ph="..." />
+            <marker date="1503787592000" expanded="true" signature="1110:1205" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flappybird/scene/main/scene_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#44#125#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#SceneMain#0" expanded="false" />
+            <element signature="n#!!block;n#setupInputs#0;n#SceneMain#0" expanded="false" />
+            <element signature="n#!!block;n#update#0;n#SceneMain#0" expanded="false" />
+            <element signature="n#!!block;n#countScore#0;n#SceneMain#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/planeGame/scene/main/bullet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="373">
+          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/scene/main/enemy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-212">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_scene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/img/player.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/scene/end/scene_end.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_label.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/planeGame/scene/main/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="-36">
+          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/planeGame/guagame/gua_image.js">
+    <entry file="file://$PROJECT_DIR$/planeGame/scene/main/scene_main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="244">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planeGame/scene/title/scene_title.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
         </state>
       </provider>

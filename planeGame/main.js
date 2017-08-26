@@ -19,6 +19,7 @@ var enableDebugMode = function(game, enable) {
         var k = event.key
         if (k == 'p') {
             // 暂停功能
+            log('game paused')
             window.paused = !window.paused
         } else if ('1234567'.includes(k)) {
             // 为了 debug 临时加的载入关卡功能
@@ -36,10 +37,12 @@ var enableDebugMode = function(game, enable) {
 var __main = function() {
     var images = {
         sky: 'img/yuzhou.jpeg',
+        scene_end_bg: 'img/end.jpeg',
+        scene_title_bg: 'img/title_bg.jpeg',
         // cloud: 'img/block',
         playBullet: 'img/bullet1.png',
         enemyBullet: 'img/bullet2.png',
-        particle: 'img/particle.png',
+        particle: 'img/bullet2.png',
         player: 'img/player.png',
         enemy0: 'img/enemy0.png',
         enemy1: 'img/enemy1.png',
@@ -49,6 +52,7 @@ var __main = function() {
         enemy0_down2: 'img/enemy0_down2.png',
         enemy0_down3: 'img/enemy0_down3.png',
         enemy0_down4: 'img/enemy0_down4.png',
+
     }
     var game = GuaGame.instance(30, images, function(g){
         var s = SceneTitle.new(g)
