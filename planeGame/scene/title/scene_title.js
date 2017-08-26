@@ -1,7 +1,4 @@
 
-
-
-
 class SceneTitle extends GuaScene {
     constructor(game) {
         super(game)
@@ -11,15 +8,6 @@ class SceneTitle extends GuaScene {
             game.replaceScene(s)
         })
         this.addElement(label)
-
-
-
-        var w = GuaAnimation.new(game)
-        w.x = 100
-        w.y = 200
-        this.addElement(w)
-
-        this.w = w
         this.setupInputs()
     }
 

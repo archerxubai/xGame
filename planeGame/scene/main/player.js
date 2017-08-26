@@ -15,10 +15,11 @@
      }
 
      update() {
-         this.speed = config.player_speed
+         this.speed = config.player_speed.value
          if (this.coolDown > 0 ){
              this.coolDown--
          }
+         this.collideWithEnemy()
      }
 
      moveLeft(){
@@ -39,14 +40,29 @@
 
      fire(){
          if (this.coolDown == 0) {
-             this.coolDown = config.coolDown
+             this.coolDown = config.coolDown.value
              var x = this.x + this.w / 2
              var y = this.y
-             var b = Bullet.new(this.game)
+             var b = PlayerBullet.new(this.game)
              b.x = x
              b.y = y
              this.scene.addElement(b)
          }
 
      }
+
+     collideWithEnemy() {
+        log('collide')
+        var objs = this.game.scene.elements
+        for (let i = 0; i < objs.length; i++) {
+            let e = objs[i]
+            // log('this is ', instanceof(e))
+            if (e instanceof Enemy) {
+                if (this.collide(e)) {
+                    let s = SceneEnd.new(this.game)
+                    this.game.replaceScene(s)
+                }
+            }
+        }
+    }
  }

@@ -39,7 +39,7 @@ var __main = function() {
         // cloud: 'img/block',
         bullet: 'img/bullet1.png',
         particle: 'img/particle.png',
-        player: 'img/hero1.png',
+        player: 'img/player.png',
         enemy0: 'img/enemy0.png',
         enemy1: 'img/enemy1.png',
         enemy2: 'img/enemy2.png',

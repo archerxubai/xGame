@@ -1,12 +1,7 @@
 /**
  * Created by hasee on 2017/8/9.
  */
-var config = {
-    player_speed: 10,
-    enemy_speed: 4,
-    bullet_speed: 4,
-    coolDown: 2,
-}
+
 
 const randonBetween = function(start, end) {
     var n = Math.random() * (end - start +1)
@@ -28,7 +23,7 @@ class SceneMain extends GuaScene {
 
     setup() {
         var game = this.game
-        this.numberOfEnemies = 10
+        this.numberOfEnemies = 5
         this.bg = GuaImage.new(game, 'sky')
 
         this.player = Player.new(game)
@@ -39,8 +34,8 @@ class SceneMain extends GuaScene {
         this.addElement(this.player)
         this.addEnemies()
 
-        var ps = GuaParticleSystem.new(this.game)
-        this.addElement(ps)
+        // var ps = GuaParticleSystem.new(this.game)
+        // this.addElement(ps)
     }
 
     addEnemies(){
