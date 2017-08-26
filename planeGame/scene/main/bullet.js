@@ -1,15 +1,13 @@
 class Bullet extends GuaImage{
-    constructor(game) {
+    constructor(game, picName) {
         log('build bullet')
-        super(game, 'bullet')
+        super(game, picName)
         this.setup()
     }
 
     setup(){
         this.speed = 0
     }
-
-
 
     destroy(){
         let self = this
@@ -43,7 +41,7 @@ class Bullet extends GuaImage{
 
 class PlayerBullet extends Bullet{
     constructor(game){
-        super(game)
+        super(game, 'playBullet')
     }
 
     setup(){
@@ -65,7 +63,7 @@ class PlayerBullet extends Bullet{
 
 class EnemyBullet extends Bullet{
     constructor(game){
-        super(game)
+        super(game, 'enemyBullet')
     }
 
     setup(){

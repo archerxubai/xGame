@@ -11,7 +11,7 @@ class Enemy extends GuaImage {
         this.speed = randonBetween(2, 5)
         this.x = randonBetween(0, 350)
         this.y = -randonBetween(0, 400)
-        this.coolDown = randonBetween(100, 200)
+        this.coolDown = randonBetween(40, 100)
     }
 
     explode(){
@@ -29,7 +29,8 @@ class Enemy extends GuaImage {
 
      fire(){
          if (this.coolDown == 0) {
-             this.coolDown = randonBetween(50, 200)
+             this.coolDown = randonBetween(config.enemy_fire_cooldown_min.value,
+                                           config.enemy_fire_cooldown_max.value)
              var x = this.x + this.w / 2
              var y = this.y
              var b = EnemyBullet.new(this.game)

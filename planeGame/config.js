@@ -22,6 +22,14 @@ var config = {
         _comment:'玩家子弹速度',
         value: 4,
     },
+    enemy_fire_cooldown_min: {
+        _comment: '敌人开火冷却下限',
+        value: 50,
+    },
+    enemy_fire_cooldown_max: {
+        _comment: '敌人开火冷却上限',
+        value: 200,
+    },
 }
 
 var es = sel => document.querySelectorAll(sel)
