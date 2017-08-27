@@ -36,6 +36,8 @@ var enableDebugMode = function(game, enable) {
 var __main = function() {
     var images = {
         bg: 'img/bg_day.png',
+        title: 'img/title.png',
+        game_over: 'img/game_over.png',
         // cloud: 'img/block',
         ground: 'img/land.png',
         b1: 'img/bird0_0.png',
@@ -43,6 +45,17 @@ var __main = function() {
         b3: 'img/bird0_2.png',
         pipe_down:  'img/pipe_down.png',
         pipe_up:  'img/pipe_up.png',
+        //number
+        0: 'img/number/0.png',
+        1: 'img/number/1.png',
+        2: 'img/number/2.png',
+        3: 'img/number/3.png',
+        4: 'img/number/4.png',
+        5: 'img/number/5.png',
+        6: 'img/number/6.png',
+        7: 'img/number/7.png',
+        8: 'img/number/8.png',
+        9: 'img/number/9.png',
     }
     var game = GuaGame.instance(30, images, function(g){
         var s = SceneTitle.new(g)

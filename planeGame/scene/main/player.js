@@ -20,6 +20,23 @@
              this.coolDown--
          }
          this.collideWithEnemy()
+         this.borderLimited()
+     }
+
+    borderLimited() {
+        let rightBorder = this.game.canvas.width - this.w
+        let leftBoreder = 0
+        let topBoreder = 0
+        let floorBorder = this.game.canvas.height - this.h
+        if (this.x > rightBorder) {
+            this.x = rightBorder
+        } else if (this.x < leftBoreder) {
+            this.x = leftBoreder
+        } else if (this.y < topBoreder) {
+            this.y = topBoreder
+        } else if (this.y > floorBorder) {
+            this.y = floorBorder
+        }
      }
 
      moveLeft(){
@@ -51,7 +68,7 @@
 
      }
 
-     destroy(){
+     destroy() {
          let self = this
          let ps = GuaParticleSystem.new(self.game, self.x, self.y)
          self.game.scene.addElement(ps)
@@ -59,7 +76,9 @@
          //替换场景传分
          let s = SceneEnd.new(self.game)
          s.score = this.game.scene.score
-         self.game.replaceScene(s)
+         setTimeout(function () {
+             self.game.replaceScene(s)
+         }, 2000)
      }
 
      collideWithEnemy() {

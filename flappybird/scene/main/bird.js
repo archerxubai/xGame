@@ -32,6 +32,8 @@ class Bird extends GuaAnimation {
         var h = 475
         if (this.y > h) {
             this.y = h
+            let s = SceneEnd.new(this.game)
+            this.game.replaceScene(s)
         }
         //更新角度
         if (this.rotation < 45) {

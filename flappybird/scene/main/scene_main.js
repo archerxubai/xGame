@@ -11,15 +11,15 @@ class SceneMain extends GuaScene {
         //     var s = SceneMain.new(game)
         //     game.replaceScene(s)
         // })
-       this.score = 0
+
+        this.setup()
+        this.setupInputs()
+    }
+
+    setup(){
+        let game = this.game
         var bg = GuaImage.new(game, 'bg')
         this.addElement(bg)
-
-        var bird = Bird.new(game)
-        this.bird = bird
-        bird.x = 100
-        bird.y = 200
-        this.addElement(bird)
 
         //加入水管
         this.pipe = Pipes.new(game)
@@ -29,7 +29,21 @@ class SceneMain extends GuaScene {
        this.grounds = Grounds.new(game)
         this.addElement(this.grounds)
 
-        this.setupInputs()
+        //加入计分板
+        this.score = 0
+        let scoreBoard = GuaNumber.new(game, this.score)
+        this.scoreBoard = scoreBoard
+        scoreBoard.x = 120
+        scoreBoard.y = 150
+        scoreBoard.refresh(this.score)
+        this.addElement(scoreBoard)
+
+        //加入鸟
+        var bird = Bird.new(game)
+        this.bird = bird
+        bird.x = 100
+        bird.y = 200
+        this.addElement(bird)
     }
 
     setupInputs(){
@@ -49,12 +63,16 @@ class SceneMain extends GuaScene {
 
     draw(){
         super.draw()
-        this.game.context.fillText('分数'+ this.score, 100, 190)
+        // this.game.context.fillText('分数'+ this.score, 100, 190)
     }
 
     update(){
         super.update()
         this.countScore()
+        if(window.paused == true){
+            return
+        }
+        this.scoreBoard.refresh(this.score)
     }
 
     //计算分数

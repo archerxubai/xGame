@@ -4,11 +4,19 @@ class SceneTitle extends GuaScene {
         var bg = GuaImage.new(game, 'bg')
         this.addElement(bg)
 
+        let title = GuaImage.new(game, 'title')
+        title.x = 40
+        title.y = 120
+
+        this.addElement(title)
+
         var bird = GuaImage.new(game, 'b1')
         this.bird = bird
         bird.x = 100
         bird.y = 200
         this.addElement(bird)
+
+
 
 
         //地面
@@ -40,6 +48,9 @@ class SceneTitle extends GuaScene {
 
     draw() {
         super.draw()
-        this.game.context.fillText('按 k 开始游戏', 100, 190)
+        this.game.context.font = '15px serif'
+        this.game.context.fillStyle = 'white'
+        this.game.context.fillText('按 k 开始游戏', 80, 270)
+        this.game.context.fillText('按 j 跳跃', 80, 290)
     }
 }

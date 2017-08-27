@@ -11,7 +11,7 @@ class Enemy extends GuaImage {
         this.speedY = randonBetween(2, 5)
         this.speedX = randonBetween(-1, 1)
         this.x = randonBetween(0, 350)
-        this.y = -randonBetween(0, 400)
+        this.y = -randonBetween(0,200)
         this.coolDown = randonBetween(40, 100)
     }
 
@@ -25,7 +25,9 @@ class Enemy extends GuaImage {
     destroy(){
         let self = this
         self.explode()
-        self.setup()
+        let e = Enemy.new(self.game)
+        self.game.scene.addElement(e)
+        self.game.scene.removeElement(self)
     }
 
      fire(){
@@ -49,9 +51,21 @@ class Enemy extends GuaImage {
         this.fire()
         this.y += this.speedY
         this.x += this.speedX
-        if (this.y > 600) {
+        this.borderLimited()
+
+    }
+
+    //如果超界，则重建
+     borderLimited() {
+        let rightBorder = this.game.canvas.width
+        let leftBoreder = 0 - this.w
+        let topBoreder = 0
+        let floorBorder = this.game.canvas.height
+        if (this.x < leftBoreder || this.x > rightBorder ){
+            this.setup()
+        }else if(this.y > floorBorder){
             this.setup()
         }
-    }
+     }
 
 }
